@@ -18,4 +18,4 @@ jobs:
         git config --local user.name "Antti Saarenpää"
         git add .
         git commit -m "Add changes" -a
-        git push -f -q https://${{ secrets.GITHUB_TOKEN }}@github.com/antakasa/2019-venaja.git master
+        git push -f -q https://${{ secrets.GITHUB_TOKEN }}@github.com/antakasa/2020-ulkolinja-al-hol-update master
