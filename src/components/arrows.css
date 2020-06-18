@@ -15,7 +15,7 @@
 .venezuela-arrow.right.desktop {
 /*   left: calc(100% - 40px);
   top: calc(50% - 30px); */
-    bottom: 20px;
+    bottom: 10px;
     right: calc(50% - 10px);
     cursor: pointer;
 }

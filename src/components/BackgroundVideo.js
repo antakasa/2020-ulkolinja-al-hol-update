@@ -38,6 +38,12 @@ const BackgroundVideo = ({src, src_desktop, sub, sub_eng, tg_name, tg_name_eng, 
     };
   }, []);
 
+  const firstFrame = path => {
+    if(!path) return;
+    const replaced = path.replace("/uploads/", "/uploads/first_frames/")
+    return replaced
+  }
+
   return (
    <>
    <div className="swiper-video">
@@ -47,7 +53,7 @@ const BackgroundVideo = ({src, src_desktop, sub, sub_eng, tg_name, tg_name_eng, 
         crossOrigin="anonymous"
         playsInline
         muted={true}
-        poster={`${desktop? src_desktop : src}.jpg`}
+        poster={`${desktop? firstFrame(src_desktop) : firstFrame(src)}.jpg`}
         ref={videoEl}
         onTimeUpdate={e => {
           const {duration, currentTime} = videoEl.current;

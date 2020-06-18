@@ -26,8 +26,8 @@ const ParagraphCover = ({index, desktop, header, subHeader, header_eng, subHeade
         }}
       />
       <div className="title-box">
-        <h2 className={`cover-title ${language === "eng" ? "bigger" : "big"}`}>{header}</h2>
-        <h3 className="cover-subtitle">{subHeader}</h3>
+        <h2 className={`cover-title bigger`}>{header}</h2>
+        <h3 className="cover-subtitle big">{subHeader}</h3>
       </div>
     </div>
     <div className="cover-gradient" />

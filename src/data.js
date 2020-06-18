@@ -57,7 +57,7 @@ const dataWithBuildPath = Object.values(
   Object.replaceAll(
     dataNotReplaced,
     '/uploads',
-    'https://lusi-dataviz.ylestatic.fi/2019-11-ulkolinja-venaja-update/uploads',
+    'https://lusi-dataviz.ylestatic.fi/2020-06-ulkolinja-al-hol-update/uploads',
   ),
 );
 
