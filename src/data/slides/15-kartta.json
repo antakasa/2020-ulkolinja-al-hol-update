@@ -1,5 +1,8 @@
 {
   "type": "graph",
   "src": "/uploads/kartta_01-1-.jpg",
-  "id": "15. kartta"
+  "id": "15. kartta",
+  "src_eng": "/uploads/kartta_01_desktop.jpg",
+  "src_mobile_eng": "/uploads/kartta_01_mobile.jpg",
+  "src_mobile": "/uploads/kartta_01-1-.jpg"
 }
