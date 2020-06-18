@@ -2,5 +2,6 @@
   "type": "subtitled-video",
   "id": "20. kuka ottaa ",
   "src": "/uploads/100_kuinka_monen_pitaa_kuolla.mp4",
-  "sub": "/uploads/kuka_kantaa.vtt"
+  "sub": "/uploads/kuka_kantaa.vtt",
+  "sub_eng": "/uploads/kuka_kantaa_EN.vtt"
 }

@@ -2,5 +2,6 @@
   "type": "subtitled-video",
   "id": "8. Me ei olla tehty mitään",
   "src": "/uploads/100_ei_olla_oltu_mitaan_taistelijoita.mp4",
-  "sub": "/uploads/ei_me_olla.vtt"
+  "sub": "/uploads/ei_me_olla.vtt",
+  "sub_eng": "/uploads/ei_me_olla_EN.vtt"
 }

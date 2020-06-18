@@ -2,5 +2,6 @@
   "type": "subtitled-video",
   "id": "26. viimeinen vuosi ",
   "src": "/uploads/100_viimeinen_vuosi_raastavin.mp4",
-  "sub": "/uploads/viimeinen_vuosi.vtt"
+  "sub": "/uploads/viimeinen_vuosi.vtt",
+  "sub_eng": "/uploads/viimeinen_vuosi.vtt"
 }

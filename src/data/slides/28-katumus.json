@@ -2,5 +2,6 @@
   "type": "subtitled-video",
   "id": "28. katumus",
   "src": "/uploads/100_tottakai_sita_katuu_et_lahti.mp4",
-  "sub": "/uploads/uusi_mahdollisuus.vtt"
+  "sub": "/uploads/uusi_mahdollisuus.vtt",
+  "sub_eng": "/uploads/uusi_mahdollisuus_EN.vtt"
 }
