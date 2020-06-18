@@ -3,5 +3,8 @@
   "bottom": true,
   "id": "11. ISIS, pikkupoika polttaa passin",
   "text": "Kesäkuussa 2014 Isis julisti perustaneensa kalifaatin. Julistuksesta käynnistyi ennennäkemätön globaali liike.\n\nIsisin propagandavideot uudesta islamilaisesta valtiosta levisivät verkossa ilmiömäisesti. Kymmenet tuhannet islamistit lähtivät kalifaattiin.",
-  "src": "/uploads/isis_video_2.mp4"
+  "src": "/uploads/isis_video_2.mp4",
+  "text_eng": "In June 2014, ISIS declared it had founded a caliphate. The declaration started an unparalleled global movement.\n\nThe propaganda videos ISIS made about the new Islamic State went viral online. Tens of thousands of Islamists went to the Caliphate.",
+  "text_location": "8",
+  "src_desktop": "/uploads/isis_video_2.mp4"
 }
