@@ -7,6 +7,8 @@ collections:
   -
     label: 'Yksittäiset sivut'
     name: pages
+    editor:
+      preview: false
     files:
 
       -  
@@ -30,7 +32,7 @@ collections:
             name: src
             widget: image
           -
-            label: Header
+            label: Header 🇫🇮
             name: header1
             widget: string
           -
@@ -38,10 +40,18 @@ collections:
             hint: "Älä muuta, pidä sisältönä aina \"cover\"" 
             name: type
             widget: string
-            default: text
+            default: cover
           -
-            label: Subheader
+            label: Subheader 🇫🇮
             name: subheader
+            widget: string
+          -
+            label: Header 🇬🇧English
+            name: header1_eng
+            widget: string
+          -
+            label: Subheader 🇬🇧 English
+            name: subheader_eng
             widget: string
       -
         name: finalPage
@@ -59,8 +69,8 @@ collections:
             label: ÄLÄ MUUTA
             hint: "Älä muuta, pidä sisältönä aina \"finalPage\"" 
             name: type
-            widget: string
-            default: text
+            widget: hidden
+            default: finalPage
           -
             label: 'Areena video id'
             name: areenaVideo
@@ -81,20 +91,25 @@ collections:
             label: ÄLÄ MUUTA
             hint: "Älä muuta, pidä sisältönä aina \"text\"" 
             name: type
-            widget: string
+            widget: hidden
             default: "text"
             required: true
           -
             label:  ÄLÄ MUUTA
             hint: "Älä muuta, pidä aina on-asennossa"
             name: credits
-            widget: boolean
+            widget: hidden
             default: true
             required: true
           -
             label: Krediitit
             hint: "Kirjoita krediitit. Krediittisivuja varattu 2."
             name: text
+            widget: markdown
+          -
+            label: Krediitit 🇬🇧 English
+            hint: "Kirjoita krediitit. Krediittisivuja varattu 2."
+            name: text_eng
             widget: markdown
       -
         name: credits2
@@ -125,6 +140,11 @@ collections:
             hint: "Kirjoita krediitit. Krediittisivuja varattu 2."
             name: text
             widget: markdown
+          -
+            label: Krediitit 🇬🇧 English
+            hint: "Kirjoita krediitit. Krediittisivuja varattu 2."
+            name: text_eng
+            widget: markdown
   -
     label: 'Video background slides'
     identifier_field: id
@@ -148,17 +168,39 @@ collections:
         widget: hidden
         default: background-video
       -
-        label: 'Background video'
+        label: '📱MOBILE Background video'
         name: src
+        widget: file
+      -
+        label: '🖥️DESKTOP Background video'
+        name: src_desktop
         widget: file
       -
         label: 'Bottom positioned text'
         name: bottom
         widget: boolean
         default: false
+      - 
+        label: "Text location"
+        name: "text_location"
+        widget: "select"
+        options:
+          - { label: "1", value: "0" }
+          - { label: "2", value: "1" }
+          - { label: "3", value: "2" }
+          - { label: "4", value: "3" }
+          - { label: "5", value: "4" }
+          - { label: "6", value: "5" }
+          - { label: "7", value: "6" }
+          - { label: "8", value: "7" }
+          - { label: "9", value: "8" }
       -
         label: Text
         name: text
+        widget: markdown
+      -
+        label: Text 🇬🇧 English 
+        name: text_eng
         widget: markdown
   -
     label: 'Still background slides'
@@ -195,6 +237,10 @@ collections:
         label: Text
         name: text
         widget: markdown
+      -
+        label: Text 🇬🇧 English 
+        name: text_eng
+        widget: markdown
   -
     label: 'Graph slides'
     identifier_field: id
@@ -218,9 +264,23 @@ collections:
         widget: hidden
         default: graph
       -
-        label: 'Image'
+        label: 'Image desktop'
         name: src
         widget: image
+      -
+        label: 'Image mobile'
+        name: src_mobile
+        widget: image
+        required: false
+      -
+        label: 'Image desktop 🇬🇧 English'
+        name: src_eng
+        widget: image
+      -
+        label: 'Image mobile 🇬🇧 English'
+        name: src_mobile_eng
+        widget: image
+        required: false
   -
     label: 'Subtitled video slides'
     name: sub-video-slides
@@ -244,8 +304,12 @@ collections:
         name: id
         widget: string
       -
-        label: Video
+        label: 📱MOBILE Video
         name: src
+        widget: file
+      -
+        label: 🖥️ DESKTOP Video
+        name: src_desktop
         widget: file
       -
         label: 'Subtitle (*.vtt file)'
@@ -253,9 +317,29 @@ collections:
         widget: file
         required: false
       -
-        label: 'Tg (image)'
-        name: tg
+        label: 'Tg name'
+        name: tg_name
+        widget: string
+        required: false
+      -
+        label: 'Tg title'
+        name: tg_title
+        widget: string
+        required: false
+      -
+        label: 'Subtitle (*.vtt file) 🇬🇧 English'
+        name: sub_eng
         widget: file
+        required: false
+      -
+        label: 'Tg name 🇬🇧 English'
+        name: tg_name_eng
+        widget: string
+        required: false
+      -
+        label: 'Tg title 🇬🇧 English'
+        name: tg_title_eng
+        widget: string
         required: false
   -
     label: 'Plain text slides'
@@ -287,6 +371,10 @@ collections:
       -
         label: Text
         name: text
+        widget: markdown
+      -
+        label: Text 🇬🇧 English
+        name: text_eng
         widget: markdown
   -
     label: 'All slides'
