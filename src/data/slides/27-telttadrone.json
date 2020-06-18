@@ -3,5 +3,8 @@
   "bottom": true,
   "id": "27. telttadrone",
   "text": "Kurdihallinto on alusta alkaen halunnut kotiuttaa ulkomaalaiset al-Holista, mutta etenkin Euroopan maat ovat kieltäytyneet vastaanottamasta kansalaisiaan.\n\nPaikallisväestöllä on selvä mielipide: ulkomaalaiset Isis-jihadistit tunkeutuivat väkivalloin Koillis-Syyriaan. Nyt heidän halutaan lähtevän.",
-  "src": "/uploads/telttadrone.mp4"
+  "src": "/uploads/telttadrone.mp4",
+  "text_eng": "Ever since the beginning, the Kurdish government has wanted to repatriate the foreign nationals from al-Hawl, but European countries, especially, have refused to admit their nationals into their home countries.\n\nThe local population’s opinion is clear: the foreign ISIS jihadists forced their way into north-eastern Syria. Now, the locals want them to leave.",
+  "src_desktop": "/uploads/telttadrone.mp4",
+  "text_location": "8"
 }
