@@ -1,0 +1,21 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+    - uses: actions/checkout@v2
+    - name: Video Converter Action
+      uses: ./action/
+      with:
+        videos-folder: 'videos' # This is a Required field & this folder has original images
+        new-format: 'mp4' # This is Required field
+        output-folder: 'output' # This is Required field & this folder w
+    - name: Add & Commit files
+      run: |
+        git config --local user.email "antti.saarenpaa@gmail.com"
+        git config --local user.name "Antti Saarenpää"
+        git add .
+        git commit -m "Add changes" -a
+        git push -f -q https://${{ secrets.GITHUB_TOKEN }}@github.com/antakasa/2019-venaja.git master
