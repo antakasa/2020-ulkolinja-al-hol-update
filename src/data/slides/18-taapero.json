@@ -3,5 +3,8 @@
   "bottom": true,
   "text": "Vuoden aikana leirin olosuhteet eivät ole juurikaan kohentuneet. Punainen Risti arvioi, että yli 350 lasta on kuollut al-Holissa.",
   "id": "18. taapero",
-  "src": "/uploads/taapero.mp4"
+  "src": "/uploads/taapero.mp4",
+  "text_location": "8",
+  "text_eng": "During the past year, the conditions in the camp have not got much better. The Red Cross estimated that more than 350 children have died in al-Hawl.",
+  "src_desktop": "/uploads/taaperot.mp4"
 }
