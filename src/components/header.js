@@ -6,7 +6,7 @@ import Tap from "../images/tap_toka.svg";
 import logo from "../images/ulkolinja_logo_valkoinen.png";
 import logoB from "../images/brandlogo-black.png";
 import VoiceOn from "../images/voice_on.svg";
-import VoiceOff from "../images/VoiceOff.svg";
+import VoiceOff from "../images/voiceOff.svg";
 import AudioContext from "../helpers/audioContext";
 const Header = ({ index, splitScreen, nextSlideFunc, mobile }) => {
   const audioSettings = useContext(AudioContext)
