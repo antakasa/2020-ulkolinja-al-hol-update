@@ -1,0 +1,1 @@
+export const desktopBreakpointWidth = 1025;

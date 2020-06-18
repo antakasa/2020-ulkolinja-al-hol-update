@@ -1,0 +1,10 @@
+dist
+videotest
+node_modules
+.parcel-cache/
+.cache
+*.log
+.DS_Store
+build
+*.swp
+*.swo

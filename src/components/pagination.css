@@ -1,0 +1,105 @@
+.pagination {
+  z-index: 34;
+  display: flex;
+  color: white;
+  font-size: 1em;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1150px) {
+.pagination {
+  width: 90%;
+  margin: auto;
+  }
+}
+
+.progress-bar {
+  position: relative;
+  height: 3px;
+  width: 100%;
+  border-radius: 0px;
+  background: #D5D8DC;
+}
+
+.filler {
+  background: black;
+  height: 100%;
+  border-radius: inherit;
+  transition: width 0.2s ease-in;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pagination svg {
+}
+
+.dot.active {
+  background: white;
+}
+
+.pagination.split-screen-pagination {
+  margin-bottom: 10px;
+  display: none;
+  position: relative;
+}
+
+@media only screen and (min-width: 1150px) {
+  .pagination.split-screen-pagination {
+    display: block;
+  }
+
+  .pagination.full-screen-pagination {
+    display: block;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    /* margin-top: 50px; */
+    position: absolute;
+    top: 0;
+    width: 230px;
+    right: 0;
+    height: 20px;
+}
+
+  .dot {
+    border: 1px solid black;
+  }
+  .dot.active {
+    background: black;
+  }
+}
+
+
+@media only screen and (min-width: 1150px) {
+  .progress-bar {
+    height: 12px;
+  }
+
+  .pagination .progress-bar {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px solid #dcdcdc;
+  }
+  
+  .pagination .filler {
+    background:white;
+    height: 100%;
+    border-radius: inherit;
+    transition: width 0.2s ease-in;
+    border: 1px solid #dcdcdc
+  }
+}

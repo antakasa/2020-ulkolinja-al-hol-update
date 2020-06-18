@@ -1,0 +1,92 @@
+{
+  "name": "2020-06-ulkolinja-al-hol-update",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "cross-var cross-env NODE_ENV=development BUILD_PATH=normal APP_NAME=$npm_package_name parcel serve index.html",
+    "gitrepo": "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
+    "prestart": "node loadSubs.js &&  cp -r src/public/* dist/",
+    "help": "parcel build --help",
+    "deploy": "npm run build && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
+    "deploy:test": "npm run build:test  && npx dataviz-deploy generate --dir build  && dataviz-deploy sync lusi-test $npm_package_name",
+    "deploy:fynd": "cross-var cross-env npm run build:fynd && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
+    "build:fynd": "node loadSubs.js && BUILD_PATH=fynd NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/  --out-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
+    "build": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name  parcel build --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ index.html --d-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
+    "build:test": "node loadSubs.js && cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html --out-dir build && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\""
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "@babel/template": "^7.10.1",
+    "@parcel/transformer-raw": "^2.0.0-alpha.3",
+    "@parcel/transformer-svg-react": "^2.0.0-nightly.1739",
+    "autoprefixer": "^7.2.1",
+    "babel-plugin-import-glob": "^2.0.0",
+    "babel-preset-env": "^1.7.0",
+    "data": "^0.6.1",
+    "framer-motion": "^1.6.7",
+    "jquery": "^3.4.1",
+    "lodash.compact": "^3.0.1",
+    "lodash.pickby": "^4.6.0",
+    "moment": "^2.24.0",
+    "parcel": "^1.12.4",
+    "postcss-modules": "^1.4.1",
+    "postcss-prefix-selector": "^1.7.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.12.1",
+    "react": "^16.13.1",
+    "react-context-devtool": "^1.0.1",
+    "react-div-100vh": "^0.3.4",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^5.2.1",
+    "react-id-swiper": "^2.3.2",
+    "react-lazyload": "^2.6.2",
+    "react-markdown": "^4.2.2",
+    "react-share": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "styled-components": "^4.4.1",
+    "swiper": "^4.5.0",
+    "webvtt-parser": "git+https://github.com/annevk/webvtt.git"
+  },
+  "targets": {
+    "default": {
+      "context": "browser",
+      "includeNodeModules": true,
+      "publicUrl": "asd/"
+    }
+  },
+  "staticFiles": {
+    "staticPath": [
+      "src/public"
+    ],
+    "watcherGlob": "**"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-custom-media": {},
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@svgr/parcel-plugin-svgr": "^5.4.0",
+    "cross-env": "^5.1.1",
+    "cross-var": "^1.1.0",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "postcss-custom-media": "^7.0.8"
+  }
+}
