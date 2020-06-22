@@ -9,7 +9,7 @@ jobs:
     - name: Video Converter Action
       uses: ./firstframe-action/
       with:
-        videos-folder: 'src/public/uploads' # This is a Required field & this folder has original images
+        videos-folder: 'videos' # This is a Required field & this folder has original images
         new-format: 'mp4' # This is Required field
         output-folder: 'output' # This is Required field & this folder w
     - name: Add & Commit files
