@@ -48,6 +48,7 @@ video::-webkit-media-text-track-display-backdrop {
   box-decoration-break: clone;
   background: rgba(0,0,0,.75);
   width: 79%;
+font-size: 1.2em;
   font-weight: 200;
   padding: 0.5rem 2rem;
 }
@@ -60,7 +61,7 @@ video::-webkit-media-text-track-display-backdrop {
   position: absolute;
   top: 66px;
   color: white;
-  font-weight: 200;
+  font-weight: 400;
     font-size: 1.2em;
   box-decoration-break: clone;
   padding: 30px;
